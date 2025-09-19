@@ -29,7 +29,7 @@ def contact():
 
 def query_db():
     # Could potentially move some of the database connection outside to enhance overall speed of query function
-    connect_str = "DRIVER={ODBC Driver 17 for SQL Server};SERVER=9.169.70.172,1433;DATABASE=MyAppDB;UID=SQLAdmin;PWD=P@55w0rd1234;Encrypt=no;TrustServerCertificate=yes;"
+    connect_str = "DRIVER={ODBC Driver 18 for SQL Server};SERVER=9.169.70.172,1433;DATABASE=MyAppDB;UID=SQLAdmin;PWD=P@55w0rd1234;Encrypt=no;TrustServerCertificate=yes;"
     with pyodbc.connect(connect_str) as conn:
         with conn.cursor() as cursor:
             cursor.execute(
