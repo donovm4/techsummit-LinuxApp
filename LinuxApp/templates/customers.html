@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}</h2>
+<h3>{{ message }}</h3>
+
+<p>
+    <ul>
+        {% for c in customers %}
+        <li>ID #{{ c.CustomerID }} | {{ c.FirstName }} {{ c.LastName }} (<a href="mailto:{{ c.Email }}">{{ c.Email }})</a></li>
+        {% endfor %}
+    </ul>
+</p>
+
+{% endblock %}
