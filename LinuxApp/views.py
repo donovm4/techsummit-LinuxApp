@@ -55,7 +55,7 @@ def contact():
 
 def query_db_people():
     # Could potentially move some of the database connection outside to enhance overall speed of query function
-    connect_str = "DRIVER={ODBC Driver 18 for SQL Server};SERVER=0.0.0.0,1433;DATABASE=AdventureWorksPTO;UID=appuser;PWD=???;Encrypt=no;TrustServerCertificate=yes;"
+    connect_str = "DRIVER={ODBC Driver 18 for SQL Server};SERVER=172.17.195.4,1433;DATABASE=AdventureWorksPTO;UID=appuser;PWD=???;Encrypt=no;TrustServerCertificate=yes;"
     with pyodbc.connect(connect_str) as conn:
         with conn.cursor() as cursor:
             cursor.execute(
@@ -88,4 +88,5 @@ def about():
         year=datetime.now().year,
         message='Your application description page.'
     )
+
 
