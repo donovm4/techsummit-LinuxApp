@@ -2,9 +2,9 @@
 
 Checklist:
 
-[x] DON to let BATUHAN know that a database user is needed for SQL Authentication with connection string  
-[] DON to work with OREN to update lab so that database user is created on image  
-[] DON to confirm Linux Ubuntu application works out-the-box  
+- [ ] DON to let BATUHAN know that a database user is needed for SQL Authentication with connection string  
+- [ ] DON to work with OREN to update lab so that database user is created on image  
+- [ ] DON to confirm Linux Ubuntu application works out-the-box  
 
 Below is the query to create the user so that the Linux Ubuntu Flask application can connect to the SQL Server and query the AdventureWorksPTO database.
 
